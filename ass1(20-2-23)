@@ -18,7 +18,7 @@ int main()
 		  l=num;
 		i++;
 	}
-	printf("\nLowest%d",l);
+	printf("\nLowest=%d",l);
 
     return 0;
 }
