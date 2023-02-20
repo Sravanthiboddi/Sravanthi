@@ -1,0 +1,24 @@
+/*Find Lowest among n numbers.
+Example:
+Input:5
+15 20 5 24 17
+Output:Lowestis 5*/
+
+#include <stdio.h>
+int main()
+{
+	int n,num,i,l;
+	scanf("%d",&n);  
+	i=1;
+	while(i<=n){
+		scanf("%d",&num);
+		if(i==1)
+		  l=num;
+		if(num<l)
+		  l=num;
+		i++;
+	}
+	printf("\nLowest%d",l);
+
+    return 0;
+}
