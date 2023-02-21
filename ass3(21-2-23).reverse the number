@@ -1,0 +1,16 @@
+ /*A program to print reverse of the given number*/
+#include <stdio.h>
+int main()
+{
+   int n,sum=0,r;
+   puts("enter the number");
+   scanf("%i",&n);
+   while(n>0)
+   {
+       r=n%10;
+       sum=sum*10+r;
+       n=n/10;
+   }
+  printf("the reverse number is %d",sum);
+    return 0;
+}
