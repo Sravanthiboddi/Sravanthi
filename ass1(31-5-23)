@@ -1,0 +1,33 @@
+//binary search using functions.
+#include <stdio.h>
+void bin(int n);
+int main()
+{
+    int arr[]={1,2,3,4,5,6,7,8,9,10};
+    int n;
+    scanf("%d",&n);
+    bin(n);
+    return 0;
+}
+  void bin(int n)
+  {
+    
+    int arr[]={1,2,3,4,5,6,7,8,9,10};
+    int l=sizeof(arr)/sizeof(int);
+    int si,ein,mid;
+    si=0;
+    ein=l-1;
+    while(si<=ein)
+    {
+        mid=(si+ein)/2;
+        if(arr[mid]==n)
+          {
+              printf("loc=%d",mid);
+              break;
+          }
+        if(arr[mid]>n)
+           ein=mid+1;
+        else
+           si=mid-1;
+    }
+  }
